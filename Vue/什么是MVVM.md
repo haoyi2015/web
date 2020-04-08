@@ -1,4 +1,5 @@
-## MVVM模式
-    -什么是MVVM？
+# MVVM模式
 
-    MVVM是Model-View-ViewModel的缩写。
+什么是MVVM？
+
+即：MVVM是Model-View-ViewModel的缩写。
