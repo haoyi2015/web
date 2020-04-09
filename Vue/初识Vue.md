@@ -57,9 +57,10 @@ mvvm分层为：
 
 ## 1.实现Observer
 
+defineProperty  来源 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 ```
 /*
-	首先了解defineProperty  来源 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+	首先了解defineProperty
 
 	语法Object.defineProperty(obj, prop, descriptor)
 
