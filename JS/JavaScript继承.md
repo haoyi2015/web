@@ -1,6 +1,9 @@
 # JavaScript继承
 
-继承描述：
+
+---
+
+继承：
 
 > 子类可以使用父类的所有功能，并且对这些功能进行扩展。继承的过程，就是从一般到特殊的过程
 原型链继承（对象间的继承）——————借助已有的对象创建新的对象，将子类的原型指向父类，就相当于加入了父类这条原型链
@@ -8,7 +11,6 @@
 
 
 继承的方式：
-
 1.原型链继承
 
 ```
@@ -117,3 +119,27 @@ console.log(cls.getName())
 ```
 
 > 通过class,extends关键字实现继承的方式
+
+
+小知识点记录
+call和apply
+改变this的指向
+
+```
+ // 定义一个全局函数
+function foo() {
+    console.log(this.fruit);
+}
+
+// 定义一个全局变量
+var fruit = "apple";
+// 自定义一个对象
+var pack = {
+    fruit: "orange"
+};
+
+// 等价于window.foo();
+foo.apply(window);  // "apple",此时this等于window
+// 此时foo中的this === pack
+foo.apply(pack);    // "orange"
+```
