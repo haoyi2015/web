@@ -1,5 +1,8 @@
 # JavaScript继承
 
+
+---
+
 继承：
 
 > 子类可以使用父类的所有功能，并且对这些功能进行扩展。继承的过程，就是从一般到特殊的过程
@@ -8,9 +11,6 @@
 
 
 继承的方式：
-
-+ 原型链继承
-
 1.原型链继承
 
 ```
@@ -117,3 +117,5 @@ class Child extends Parent{ // 通过extends实现继承
 var cls = new Child('一个栗子',109)
 console.log(cls.getName())
 ```
+
+> 通过class,extends关键字实现继承的方式
