@@ -119,6 +119,8 @@ console.log(cls.getName())
 ```
 
 > 通过class,extends关键字实现继承的方式
+注意：
+子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。著作权归作者所有。
 
 
 小知识点记录
