@@ -178,6 +178,6 @@ Function.prototype.bindFun = function (context) {
     	// 返回函数指定this
     	_this.apply(context,agrs.concat(newsAgrs))
     }
-    }
-    am.bindFun(so)
+}
+am.bindFun(so)
 ```
