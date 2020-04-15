@@ -1,6 +1,6 @@
 # JavaScript——call，apply，bind
 
-标签（空格分隔）： this
+与this相关
 
 ---
 

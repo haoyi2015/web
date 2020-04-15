@@ -1,6 +1,6 @@
 #JavaScript——this指向问题记录
 
-标签（空格分隔）： this指向
+this指向
 
 ---
 
