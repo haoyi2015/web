@@ -1,0 +1,19 @@
+.link-router{
+    a{
+        display: inline-block;
+        margin: 20px;
+    }
+}
+.nav-list{
+    li{
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        line-height: 36px;
+        cursor: pointer;
+        font-size: 26px;
+    }
+    li.active{
+        color: yellowgreen;
+    }
+}
