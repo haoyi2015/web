@@ -1,49 +1,60 @@
-//import React from 'react'
-//import ReactDOM from 'react-dom'
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
-// 自己实现的react
-import React, { Component } from './learn/learnReact'
-import ReactDOM from './learn/learnReactDOM'
+// 生命周期实列
+import ComLife from './learn/LifeCycle'
 
-// Comp组件
-function Comp(props){
-  console.log(props)
-  return <h2>注释---- Comp{props.name}</h2>
-}
-// 申明一个组件
-class Comp1 extends Component{
+// class组件
+class CommList extends Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      comments: []
+    }
+  }
+  // Mount函数 组件已经被渲染到 DOM 中后运行
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        comments: [
+          { name: '李大明', age: 10, nian: 2000 },
+          { name: '话大人', age: 100, nian: 1900 }
+        ]
+      })
+    },1000)
+  }
+  // 渲染
   render() {
-    const list = [{
-      name: '李大华',
-      id: 19012
-    },{
-      name: '王大华',
-      id: 99919012
-    },{
-      name: '孙大华',
-      id: 91219012
-    }]
-    return(
+    const comments = this.state.comments
+    return (
       <div>
-        <h2>注释----{this.props.name}</h2>
-        <br/>
-        <ul>
-          {list.map(item => (
-            <li key={item.id}>{item.name}</li>
-          ))}
-        </ul>
+        {comments.map((item,index) => (
+          <CompData key={index} data={item}/>
+        ))}
       </div>
     )
   }
 }
-// 自己定义jsx(虚拟dom)
+// 函数组件
+function CompDatas( {data} ){
+  console.log('render')
+  return(
+    <div>名字：{ data.name } 年龄：{data.age}出生：{data.nian}</div>
+  )
+}
+// 高价函数使用(React 16.6.0之后)
+const CompData = React.memo(function ({data}){
+  console.log('render')
+  return(
+    <div>名字：{ data.name } 年龄：{data.age}出生：{data.nian}</div>
+  )
+})
 const jsx = (
-  <div className="demo">
-    <span style={{color:'red'}}>span标签</span>
-    <br/><br/>
-    <button onClick={() =>{alert('点击事件')}}>点击事件</button>
-    <Comp name="函数组件"/>
-    <Comp1 name="这是一个Copm1组件"/>
+  <div>
+    <CommList></CommList>
+    <br/>
+    <h2>生命周期函数</h2>
+    <ComLife/>
   </div>
 )
 ReactDOM.render(jsx,document.querySelector('#root'))
