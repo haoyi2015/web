@@ -4,6 +4,27 @@ import ReactDOM from 'react-dom'
 // 生命周期实列
 import ComLife from './learn/LifeCycle'
 
+// 时钟
+import ClockComp from './learn/clock'
+
+// 事件处理
+import ClikComp from './learn/click'
+
+// 表单
+import FormComp from './learn/form'
+
+// context
+import NumCompContext from './learn/context'
+
+// 高阶组件
+import HocComp from './learn/HOC'
+
+// hock -- useState
+import UseComp from './learn/useState'
+
+// 数组深拷贝
+import DeepClone from './learn/deepClone'
+
 // class组件
 class CommList extends Component{
   constructor(props){
@@ -55,6 +76,20 @@ const jsx = (
     <br/>
     <h2>生命周期函数</h2>
     <ComLife/>
+    <h2>state方法实例：</h2>
+    <ClockComp increment=" 可以更新+1"/>
+    <h2>事件处理</h2>
+    <ClikComp />
+    <h2>表单</h2>
+    <FormComp />
+    <h2>context组件通信</h2>
+    <NumCompContext />
+    <h2>hock -- useState使用</h2>
+    <UseComp />
+    <h2>高阶组件</h2>
+    <HocComp />
+    <h2>数组的深拷贝</h2>
+    <DeepClone />
   </div>
 )
 ReactDOM.render(jsx,document.querySelector('#root'))
