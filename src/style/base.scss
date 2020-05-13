@@ -1,0 +1,72 @@
+/*
+    搜索框背景和圆角样式
+*/
+$search-background: #F8F8F8;
+$search-brad: 15px;
+
+/*
+    统一样式设置
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: 0;
+    background: none;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.mlr{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.clearfix:after{
+    content: "020"; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;  
+}
+
+.clearfix {
+    /* 触发 hasLayout */ 
+    zoom: 1; 
+}
+i,em{
+    font-style: normal;
+}
+
+.wui-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.wui-flex__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.wui-flex__item-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.star-img{
+    width: 12px;
+    margin-right: 5px;
+}
+.white-space{
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}

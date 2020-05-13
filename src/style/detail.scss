@@ -1,0 +1,31 @@
+.detail-info{
+    img{
+        width: 100%;
+    }
+    .info{
+        margin-bottom: 12px;
+        background: #FFFFFF;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+        border-radius: 8px;
+        padding-bottom: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 20px;
+        margin-top: 30px;
+        .title{
+            font-size: 20px;
+            color: #292929;
+            letter-spacing: 0;
+        }
+        .dec{
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0.43px;
+            margin-top: 12px;
+        }
+    }
+    .weui-media-box {
+        padding: 16px;
+        position: relative;
+    }
+}

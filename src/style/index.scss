@@ -1,0 +1,83 @@
+.dl-banner{
+    margin-top: 60px;
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}
+.tab-nav{
+    margin-top: 20px;
+    .text-c{
+        text-align: center;
+    }
+    span{
+        display: block;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #333333;
+        letter-spacing: 0;
+    }
+    img{
+        width: 36px;
+    }
+}
+.index-shop-list{
+    margin-top: 30px;
+    li{
+        margin-bottom: 22px;
+    }
+    .left-img{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 6px;
+        }
+    }
+    .right-cont{
+        p{
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: bold;
+            em{
+                border: 1px solid #FEC9C0;
+                border-radius: 15px;
+                padding: 2px 8px;
+                color: #FC6000;
+                float: right;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            i{
+                display: inline-block;
+                width: 76%;
+            }
+        }
+        div{
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0.43px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            i{
+                color: #FC6000;
+                margin-right: 10px;
+            }
+        }
+        span{
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0.43px;
+        }
+    }
+}
+.no-data{
+    font-size: 12px;
+    color: #CCCCCC;
+    letter-spacing: 0;
+    margin: 30px 0;
+    text-align: center;
+}
