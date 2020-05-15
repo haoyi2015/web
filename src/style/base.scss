@@ -14,12 +14,18 @@ $search-brad: 15px;
 input{
     border: 0;
     background: none;
+    outline:medium;
 }
 ul,li{
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+button{
+    background: none;
+    border: 0;
+    outline:medium;
 }
 .mlr{
     margin-left: 15px;
@@ -69,4 +75,7 @@ i,em{
     word-wrap: normal;
     word-wrap: break-word;
     word-break: break-all;
+}
+.min-w{
+    min-width: 0;
 }

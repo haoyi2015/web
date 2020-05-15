@@ -1,12 +1,49 @@
 .login-warp{
-    h1{
-        margin: 50px;
-        font-size: 20px;
+    .login-inp {
+        margin: 0 30px 15px 30px;
+        border: 1px solid #999;
+        border-radius: 25px;
+        label {
+            width: 60px;
+            text-align: center;
+            display: inline-block;
+            color: #666;
+        }
+        input {
+            line-height: 40px;
+            color: #333;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
     }
-    width: 360px;
-    margin: 0 auto;
-    margin-top: 60px;
-    .login-form-button {
-        width: 100%;
+    .add-photo {
+        margin-bottom: 1em;
+        border: 2px solid #FC6000;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        margin: 60px auto;
+        border-radius: 100%;
+    }
+    .bnt{
+        font-size: 20px;
+        font-weight: 100;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 12px 0;
+        background: #FC6000;
+        border-radius: 50em;
+        -webkit-border-radius: 50em;
+        -moz-border-radius: 50em;
+        -o-border-radius: 50em;
+        -ms-border-radius: 50em;
+        border: none;
+        text-align: center;
+        width: 90%;
+        margin: 30px auto;
+        display: block;
     }
 }

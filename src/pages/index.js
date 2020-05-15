@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import '../style/base.scss'
 import '../style/index.scss'
 
+// 导入store
+import store from '../store'
+// 导入action
+import sendAction from '../action'
+
 import HeaderCom from '../components/header'
 import bannerImgUrl from '../images/1.png'
 import { getList } from '../seaver/api'
@@ -20,6 +25,8 @@ function IndexComp() {
 	},[])
 	function setDetail(item){
 		console.log(98)
+		const action = sendAction(item)
+		store.dispatch(action)
 		sessionStorage.setItem('detail',JSON.stringify(item))
 	}
 	return (
@@ -57,7 +64,7 @@ function IndexComp() {
 								<div className="left-img">
 									<img src={item.frontImg} />
 								</div>
-								<div className="right-cont wui-flex__item">
+								<div className="right-cont wui-flex__item min-w">
 									<p><i className="white-space">{item.name}</i><em>{item.avgScore}</em></p>
 									<div><img className="star-img" src={require('../images/star.png')} /><i>{item.avgScore}</i>月销178</div>
 									<span>¥60起送｜配送费约¥5</span>

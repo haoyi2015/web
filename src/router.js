@@ -11,6 +11,7 @@ import Nomatch from './pages/404'
 import IndexComp from './pages/index'
 import SearchComp from './pages/search'
 import DetailComp from './pages/detail'
+import LoginComp from './pages/login'
 
 function RouterList(props){
     // 监控路由变化 withRouter（高级组件hock，参数是组件返回也是组件）
@@ -23,6 +24,7 @@ function RouterList(props){
             <Route path="/index" exact component={IndexComp}></Route>
             <Route path="/search" exact component={SearchComp}></Route>
             <Route path="/detail/:id" exact component={DetailComp}></Route>
+            <Route path="/login" exact component={LoginComp}></Route>
             <Route path="*" component={Nomatch}></Route>
         </Switch>
     </Router>
