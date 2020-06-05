@@ -1,5 +1,12 @@
 import React from 'react';
+//import { Router, Route, hashHistory } from 'react-router'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+// import { createHashHistory } from 'history';
+// const hashHistory = createHashHistory();
+
+// import createBrowserHistory from "history/createBrowserHistory";
+// const customHistory = createBrowserHistory();
+
 // Redirect 重定向
 // import Home from './pages/Home'
 // import About from './pages/About'
